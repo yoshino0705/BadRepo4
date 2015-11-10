@@ -66,11 +66,11 @@ public class Cell {
 	public char getStateRep() {
 		char toReturn = ' ';
 		if (_state == State.DEAD) {
-			toReturn = '.';
+			toReturn = ' ';
 		} else if (_state == State.ALIVE) {
-			toReturn = 'X';
+			toReturn = '*';
 		} else {
-			toReturn = '?';
+			toReturn = ' ';
 		}
 		return toReturn;
 	}
